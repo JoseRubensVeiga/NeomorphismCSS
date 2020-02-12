@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,700,900&display=swap');
+body {
+    background-color: #E6E9EF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    height: 300px;
+    width: 300px;
+    background-color: #E6E9EF;
+    border-radius: 35%;
+    box-shadow: -30px -30px 70px #FFFFFF, 10px 10px 30px #00000060;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-timing-function: ease-in-out;
+    overflow: hidden
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: -30px -30px 70px #FFFFFF, 30px 30px 50px #00000040;
+    border-radius: 100px;
+    transform: scale(1.2);
+    width: 550px;
+}
+
+.btn:hover img {
+    transform: scale(0);
+    max-width: 0;
+    opacity: 0
+}
+
+.btn:hover .txt {
+    transform: scale(1);
+    transition-delay: .2s;
+    opacity: 1;
+}
+
+.btn:active {
+    box-shadow: -30px -30px 70px #FFFFFF, 10px 10px 30px #00000060;
+    transform: scale(1);
+}
+
+img {
+    width: 80%;
+    opacity: 0.06;
+    max-width: 270px;
+    transition-timing-function: ease-in-out;
+    position: absolute;
+}
+
+.txt {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 150px;
+    font-weight: bold;
+    color: #00000030;
+    transform: scale(0);
+    opacity: 0;
+    transition-timing-function: ease-in-out;
+    position: absolute;
+    user-select: none;
+}

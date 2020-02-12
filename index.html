@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>Neomorphism</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <span class="btn">
+        <img src="icon.png" />
+        <span class="txt">Home</span>
+    </span>
+    
+    <script>
+        
+    const $ = document.querySelector.bind(document);
+        
+    [$('.btn'), $('img'), $('.txt')].forEach(el => {
+        el.style.transition = '.5s' ;
+    });
+    </script>
+</body>
+</html>
